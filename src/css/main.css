@@ -31,7 +31,7 @@
   --breakpoint-md: 768px;
   --breakpoint-lg: 992px;
   --breakpoint-xl: 1200px;
-  --font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --font-family-sans-serif: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace; }
 
 *,
@@ -50,7 +50,7 @@ article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
 
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-size: 0.875rem;
   font-weight: 400;
   line-height: 1.5;
@@ -301,7 +301,7 @@ template {
 h1, h2, h3, h4, h5, h6,
 .h1, .h2, .h3, .h4, .h5, .h6 {
   margin-bottom: 0.5rem;
-  font-weight: 500;
+  font-weight: 700;
   line-height: 1.2; }
 
 h1, .h1 {
@@ -4186,7 +4186,7 @@ a.close.disabled {
   z-index: 1070;
   display: block;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-style: normal;
   font-weight: 400;
   line-height: 1.5;
@@ -4271,7 +4271,7 @@ a.close.disabled {
   z-index: 1060;
   display: block;
   max-width: 276px;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-style: normal;
   font-weight: 400;
   line-height: 1.5;
@@ -7084,6 +7084,24 @@ a.text-dark:hover, a.text-dark:focus {
     color: inherit;
     border-color: #dee2e6; } }
 
+.resize {
+  width: 100%; }
+  @media (min-width: 768px) {
+    .resize {
+      max-width: 720px;
+      margin-left: auto;
+      margin-right: auto; } }
+  @media (min-width: 992px) {
+    .resize {
+      max-width: 960px;
+      margin-left: auto;
+      margin-right: auto; } }
+  @media (min-width: 1200px) {
+    .resize {
+      max-width: 1100px;
+      margin-left: auto;
+      margin-right: auto; } }
+
 .fontsize-12 {
   font-size: 0.75rem; }
 
@@ -7096,52 +7114,95 @@ a.text-dark:hover, a.text-dark:focus {
 .fontsize-20 {
   font-size: 1.25rem; }
 
-.heading-page .heading-title {
-  font-size: 1.375rem;
-  margin: 0; }
+.pageheading {
+  margin-bottom: 20px; }
+  .pageheading .pageheading-title {
+    font-size: 2.25rem;
+    font-weight: bold !important;
+    margin-bottom: 5px; }
+  .pageheading .pageheading-desc {
+    font-size: 1rem;
+    line-height: 24px; }
+  .pageheading.pageheading-devider::after {
+    content: "";
+    background-color: #dc3545;
+    display: inline-block;
+    height: 2px;
+    width: 75px; }
 
-.heading-page .heading-devider {
-  background-color: rgba(0, 0, 0, 0.125);
-  height: 2px;
-  margin: 10px 0 20px; }
-  .heading-page .heading-devider::after {
-    content: '';
+.subheading.subheading-bordered {
+  margin-bottom: 5px; }
+  .subheading.subheading-bordered::after {
+    content: "";
+    background-color: #dc3545;
     display: block;
     height: 2px;
-    background-color: purple;
-    width: 150px; }
+    width: 10px;
+    margin-bottom: 10px; }
+
+.subheading.subheading-lg .subheading-title {
+  font-size: 1.5rem !important;
+  font-weight: bold !important;
+  margin-bottom: 20px; }
+
+.subheading.subheading-md .subheading-title {
+  font-size: 1.125rem !important;
+  font-weight: bold !important;
+  margin-bottom: 10px; }
+
+.subheading.subheading-sm .subheading-title {
+  font-size: 1rem !important;
+  font-weight: bold !important;
+  margin-bottom: 10px; }
+
+.subheading.subheading-xs .subheading-title {
+  font-size: 0.875rem !important;
+  font-weight: bold !important;
+  margin-bottom: 10px; }
+
+.blank-item {
+  border: 2px dashed rgba(255, 255, 255, 0.2);
+  color: #fff;
+  display: block;
+  font-weight: bold !important;
+  height: 230px;
+  position: relative;
+  width: 100%;
+  text-align: center; }
+  .blank-item:hover {
+    color: rgba(255, 255, 255, 0.75); }
+  .blank-item .blank-text {
+    left: 50%;
+    top: 50%;
+    position: absolute;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%); }
 
 .banner {
   position: relative;
   background: url("../../images/banner.jpg") no-repeat center center;
   background-size: cover;
   min-height: 450px;
-  margin-bottom: 100px; }
+  margin-bottom: 100px;
+  width: 100%; }
   .banner::after {
     content: '';
     display: block;
     width: 100%;
     height: 100%;
     position: absolute;
-    bottom: -280px;
+    bottom: -230px;
     left: 0;
     background: url("../../images/bg_1.png") no-repeat center center;
-    background-size: 100% 100%; }
+    background-size: 100% 30%; }
 
-.banner-menu {
+.banner-bottom {
+  color: #fff;
   position: absolute;
-  left: 50%;
-  bottom: -40px;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
-  width: 1100px;
-  z-index: 1000;
-  text-align: left; }
+  bottom: -35px;
+  width: 100%; }
 
-section {
-  margin-bottom: 100px; }
-
-.banner-carousel {
+.banner-center {
   color: #fff;
   position: absolute;
   top: 50%;
@@ -7149,27 +7210,56 @@ section {
           transform: translateY(-50%);
   width: 100%; }
 
-.we_bg {
-  background-color: #f9f9f9;
-  position: relative; }
-  .we_bg::before {
+.me_bg {
+  background-color: #fff;
+  position: relative;
+  padding-bottom: 100px; }
+  .me_bg::after {
     content: '';
     display: block;
     width: 100%;
     height: 100%;
     position: absolute;
-    top: -180px;
+    bottom: -200px;
     left: 0;
     background: url("../../images/bg_2.png") no-repeat center center;
-    background-size: 100% 100%; }
+    background-size: 100% 50%; }
+
+.we_bg {
+  background-color: #f9f9f9;
+  position: relative;
+  padding-top: 30px;
+  padding-bottom: 50px; }
   .we_bg::after {
     content: '';
     display: block;
     width: 100%;
     height: 100%;
     position: absolute;
-    bottom: -140px;
+    bottom: -180px;
     left: 0;
     background: url("../../images/bg_3.png") no-repeat center center;
-    background-size: 100% 100%;
+    background-size: 100% 50%;
     z-index: -1; }
+
+.world_bg {
+  padding-bottom: 100px;
+  padding-top: 80px; }
+
+.idea_bg {
+  background-color: #f1f1f1;
+  position: relative;
+  padding-top: 50px; }
+  .idea_bg::before {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: -270px;
+    left: 0;
+    background: url("../../images/bg_4.png") no-repeat center center;
+    background-size: 100% 50%; }
+
+.patner_bg {
+  background-color: #f1f1f1; }

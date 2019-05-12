@@ -7,6 +7,7 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <meta name="theme-color" content="#000"/>
   <title>Activepark Theme</title>
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
   <link rel="stylesheet" href="./css/main.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css">
@@ -15,7 +16,7 @@
 <body>
   <header class="banner">
     <div class="bg-danger">
-      <div class="container d-flex justify-content-end">
+      <div class="container-fluid resize d-flex justify-content-end">
         <ul class="nav">
           <li class="nav-item"><a href="#" class="text-white nav-link">Coca Cola Corporate Site</a></li>
           <li class="nav-item"><a href="#" class="text-white nav-link active">Bahasa</a></li>
@@ -24,7 +25,7 @@
     </div>
 
     <nav class="navbar navbar-expand-lg navbar-dark text-uppercase">
-      <div class="container">
+      <div class="container-fluid resize">
         <a class="navbar-brand" href="#">Navbar</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -73,18 +74,65 @@
       </div>
     </nav>
 
-    <div class="container">
-      <div class="banner-carousel">
-        <div>
-          <div class="owl-carousel carousel">
-            <div class="item">
-              <h1>Jakarta Active Park</h1>
-              <p>15 Juni 2017 @ Kembang Sepatu Park</p>
-              <a href="#" class="btn btn-warning rounded-pill px-4">View More <span class="ml-2 caret-md">&#x279E;</span></a>
+    
+    <div class="banner-center">
+      <div class="container-fluid resize">
+        <div class="owl-carousel carousel">
+          <div class="item">
+            <div class="pageheading">
+              <h1 class="pageheading-title">Jakarta Active Park</h1>
+              <p class="pageheading-desc">15 Juni 2017 @ Kembang Sepatu Park</p>
+            </div>
+            <a href="#" class="btn btn-warning rounded-pill px-4">View More <span class="ml-2 caret-md">&#x279E;</span></a>
+          </div>
+
+          <div class="item">
+            <div class="pageheading">
+              <h1 class="pageheading-title">Jakarta Active Park</h1>
+              <p class="pageheading-desc">15 Juni 2017 @ Kembang Sepatu Park</p>
+            </div>
+            <a href="#" class="btn btn-warning rounded-pill px-4">View More <span class="ml-2 caret-md">&#x279E;</span></a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    
+    <section class="banner-bottom">
+      <div class="container-fluid resize">
+        <div class="row">
+          <div class="col-sm-12">
+            <div class="owl-carousel slider">
+              <div class="item">
+                <div class="card bg-danger text-white">
+                  <div class="card-body pb-2">
+                    <span class="mt-4 fontsize-20 font-weight-bold">Me</span>
+                    <h2 class="fontsize-12">Enchancing Personal Well-Being</h2>
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="card bg-danger text-white">
+                  <div class="card-body pb-2">
+                    <span class="mt-4 fontsize-20 font-weight-bold">Me</span>
+                    <h2 class="fontsize-12">Enchancing Personal Well-Being</h2>
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="card bg-danger text-white">
+                  <div class="card-body pb-2">
+                    <span class="mt-4 fontsize-20 font-weight-bold">Me</span>
+                    <h2 class="fontsize-12">Enchancing Personal Well-Being</h2>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </div>
+    </section>
+    
       
       <!-- <div class="banner-menu">
         <div class="owl-carousel slider">
@@ -114,16 +162,15 @@
           </div>
         </div>
       </div> -->
-    </div>
   </header>
   
-  <main>
-    <section>
+  <!-- <main>
+    <section class="me_bg">
       <div class="container">
         <div class="row">
-          <div class="col-sm-3">
+          <div class="col-sm-3 text-center">
             <h2>ME</h2>
-            <p>Our Initiatives to <br/> Enhance Personal <br/>Well-Being </p>
+            <p>Our Initiatives to Enhance Personal <br/> Well-Being </p>
             <a href="#">See all <span class="caret-md">&#x279E;</span></a>
           </div>
   
@@ -162,6 +209,7 @@
         </div>
       </div>
     </section>
+
     <section class="we_bg">
       <div class="container">
         <div class="row">
@@ -207,7 +255,7 @@
       </div>
     </section>
 
-    <section>
+    <section class="world_bg">
       <div class="container">
         <div class="row">
           <div class="col-sm-3">
@@ -253,11 +301,11 @@
     </section>
   </main>
 
-  <section>
+  <section class="idea_bg">
     <div class="container">
       <div class="row">
         <div class="col-sm-10 offset-sm-1">
-          <h1 class="text-center">Initiative Idea For You</h1>
+          <h1 class="text-center mb-5">Initiative Idea For You</h1>
 
           <div class="row .no-gutters mx-2n">
             <div class="col-sm-4 px-2">
@@ -298,7 +346,7 @@
     </div>
   </section>
 
-  <section>
+  <section class="patner_bg">
     <div class="container">
       <div class="row">
         <div class="col-sm-10 offset-sm-1">
@@ -402,7 +450,7 @@
       </div>
     </div>
  
-  </footer>
+  </footer> -->
     
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
@@ -410,19 +458,20 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
   <script>
     $('.slider').owlCarousel({
-      loop: false,
-      margin: 15,
-      nav: true,
+      stagePadding: 50,
+      items: 1,
+      loop: true,
+      margin: 10,
+      autoWidth: true,
+      center: true,
       responsive: {
-        0: {
-          items: 1
+        768: {
+          items: 3,
+          stagePadding: 0,
+          center: false,
+          loop: false,
+          autoWidth: false
         },
-        600: {
-          items: 3
-        },
-        1000: {
-          items: 3
-        }
       }
     });
 
@@ -447,7 +496,8 @@
       loop: true,
       margin: 15,
       nav: true,
-      items: 1
+      items: 1,
+      autoplay: true
     });
   </script>
 </body>
