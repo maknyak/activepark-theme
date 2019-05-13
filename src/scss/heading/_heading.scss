@@ -1,0 +1,47 @@
+@import "./sizing/_sizing-function.scss";
+
+.pageheading {
+  margin-bottom: 20px;
+
+  .pageheading-title {
+    font-size: convert-rem(36px);
+    font-weight: bold !important;
+    margin-bottom: 5px;
+  }
+
+  .pageheading-desc {
+    font-size: convert-rem(16px);
+    line-height: 24px;
+  }
+
+  &.pageheading-devider {
+    &::after {
+      content: "";
+      background-color: $danger;
+      display: inline-block;
+      height: 2px;
+      width: 75px;
+    }
+  }
+}
+
+.subheading {
+  margin-bottom: 20px;
+  
+  &.subheading-centered {
+    text-align: center;
+
+    @include media-breakpoint-up(sm) {
+      text-align: left;
+    }
+  }
+
+  .subheading-title {
+    font-size: convert-rem(36px);
+    margin-bottom: 10px;
+  }
+
+  .subheading-desc {
+    margin-bottom: 10px;
+  }
+}

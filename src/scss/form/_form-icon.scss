@@ -1,0 +1,19 @@
+.input-group-icon {
+  .form-control {
+    padding-left: 15px;
+    padding-right: 35px;
+  }
+
+  .input-group-append {
+    position: relative;
+    z-index: 1000;
+    
+    .input-group-btn {
+      position: relative;
+      font-size: 16px;
+      top: -2px;
+      right: 45px;
+      color: $danger;
+    }
+  }
+}
