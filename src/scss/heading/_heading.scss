@@ -26,70 +26,22 @@
 }
 
 .subheading {
-  &.subheading-bordered {
-    margin-bottom: 5px;
-    
-    &::after {
-      content: "";
-      background-color: $danger;
-      display: block;
-      height: 2px;
-      width: 10px;
-      margin-bottom: 10px;
+  margin-bottom: 20px;
+  
+  &.subheading-centered {
+    text-align: center;
+
+    @include media-breakpoint-up(sm) {
+      text-align: left;
     }
   }
 
-  &.subheading-lg {
-    .subheading-title {
-      font-size: convert-rem(24px) !important;
-      font-weight: bold !important;
-      margin-bottom: 20px;
-    }
+  .subheading-title {
+    font-size: convert-rem(36px);
+    margin-bottom: 10px;
   }
 
-  &.subheading-md {
-    .subheading-title {
-      font-size: convert-rem(18px) !important;
-      font-weight: bold !important;
-      margin-bottom: 10px;
-    }
-  }
-
-  &.subheading-sm {
-    .subheading-title {
-      font-size: convert-rem(16px) !important;
-      font-weight: bold !important;
-      margin-bottom: 10px;
-    }
-  }
-
-  &.subheading-xs {
-    .subheading-title {
-      font-size: convert-rem(14px) !important;
-      font-weight: bold !important;
-      margin-bottom: 10px;
-    }
-  }
-}
-
-.blank-item {
-  border: 2px dashed rgba($white, .2);
-  color: $white;
-  display: block;
-  font-weight: bold !important;
-  height: 230px;
-  position: relative;
-  width: 100%;
-  text-align: center;
-
-  &:hover {
-    color: rgba($white, .75);
-  }
-
-  .blank-text {
-    left: 50%;
-    top: 50%;
-    position: absolute;
-    transform: translate(-50%, -50%);
+  .subheading-desc {
+    margin-bottom: 10px;
   }
 }
